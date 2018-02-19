@@ -11,14 +11,18 @@ function setCart(c) {
   cart = c;
   return cart;
 }
-//-------------------------------------------------
-//cfunction accepts one argument, the name of an item.
-//create a new object representing the item. The object should consist of one keys
-//-value pair which is the price of each item should be a randomly-generated integer
-// between 1 and 100.
+//----------------------------------------
+//--------
+//cfunction accepts one argument, the name
+//of an item.
+//create a new object representing the item
+//The object should consist of one keys
+//-value pair which is the price of each
+//item should be a randomly-generated
+//integer between 1 and 100.
 
 function addToCart(item) {
- // write your code here
+// write your code here
  cart.push({[item]: Math.floor(Math.random()*100)});
  console.log(`${item} has been added to your cart.`);
  return cart;
@@ -27,10 +31,11 @@ function addToCart(item) {
 //viewCart function - loop over every item in your cart, printing out the contents 
 
 function viewCart() {
+
+// write your code here
   
-  // write your code here
-  
-  //console.log("Cart Length is " + cart.length);
+//console.log("Cart Length is " + cart
+//.length);
   
   if (cart.length === 0) {
     return console.log("Your shopping cart is empty.");
